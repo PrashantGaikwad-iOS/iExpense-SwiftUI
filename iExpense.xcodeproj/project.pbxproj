@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05F5EA2236C00F3009619A9 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05F5EA1236C00F3009619A9 /* Expenses.swift */; };
 		B0C535AE236A9FEC008CD161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C535AD236A9FEC008CD161 /* AppDelegate.swift */; };
 		B0C535B0236A9FEC008CD161 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C535AF236A9FEC008CD161 /* SceneDelegate.swift */; };
 		B0C535B2236A9FEC008CD161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C535B1236A9FEC008CD161 /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B05F5EA1236C00F3009619A9 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		B0C535AA236A9FEC008CD161 /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C535AD236A9FEC008CD161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C535AF236A9FEC008CD161 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B0C535AD236A9FEC008CD161 /* AppDelegate.swift */,
 				B0C535AF236A9FEC008CD161 /* SceneDelegate.swift */,
 				B0C535B1236A9FEC008CD161 /* ContentView.swift */,
+				B05F5EA1236C00F3009619A9 /* Expenses.swift */,
 				B0C53641236AE951008CD161 /* AddExpenseItemView.swift */,
 				B0C535B3236A9FF2008CD161 /* Assets.xcassets */,
 				B0C535B8236A9FF2008CD161 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05F5EA2236C00F3009619A9 /* Expenses.swift in Sources */,
 				B0C535AE236A9FEC008CD161 /* AppDelegate.swift in Sources */,
 				B0C535B0236A9FEC008CD161 /* SceneDelegate.swift in Sources */,
 				B0C53642236AE951008CD161 /* AddExpenseItemView.swift in Sources */,
