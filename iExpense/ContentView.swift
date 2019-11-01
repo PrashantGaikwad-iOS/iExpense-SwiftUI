@@ -44,6 +44,8 @@ struct ContentView: View {
     
     @State private var showingAddExpenseItemView = false
     
+    @State var amountColor = Color(UIColor.lightGray)
+    
     var body: some View {
         NavigationView {
             List {
@@ -55,7 +57,9 @@ struct ContentView: View {
                             Text(item.type)
                         }
                         Spacer()
+                        
                         Text("$\(item.amount)")
+                            .foregroundColor(self.calculateColor(for: item.amount))
                     }
                 }
                 .onDelete(perform: removeItems)
@@ -71,6 +75,18 @@ struct ContentView: View {
                 .sheet(isPresented: $showingAddExpenseItemView) {
                     AddExpenseItemView(expenses: self.expenses)
             }
+        }
+    }
+    
+    func calculateColor(for Amount: Int) -> Color {
+        if Amount < 10 {
+            return Color.green
+        }
+        else if Amount < 100 {
+            return Color.blue
+        }
+        else{
+            return Color.red
         }
     }
     

@@ -19,6 +19,8 @@ struct AddExpenseItemView: View {
     
     @ObservedObject var expenses: Expenses
     
+    @State private var showingAlert = false
+    
     var body: some View {
         NavigationView {
             Form {
@@ -37,12 +39,19 @@ struct AddExpenseItemView: View {
             .navigationBarItems(trailing:
                 Button("Save") {
                     if let amount = Int(self.amount) {
+                        
                         let expense = ExpenseItem(name: self.name, type: self.type, amount: amount)
                         self.expenses.items.append(expense)
                         self.presentationMode.wrappedValue.dismiss()
                     }
+                    else{
+                        self.showingAlert.toggle()
+                    }
                 }
             )
+        }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Oops"), message: Text("Please enter the correct amount"), dismissButton: .default(Text("Got it!")))
         }
     }
 }
